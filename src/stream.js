@@ -44,8 +44,8 @@ exports.createDecodeStream = function (opts) {
 
         if (opts.magic && message.magic !== opts.magic) {
           return cb(new Error('Magic value in message ' +
-            '(' + message.magic.toString(16) + ') did not match expected ' +
-            '(' + opts.magic.toString(16) + ')'))
+              '(' + message.magic.toString(16) + ') did not match expected ' +
+              '(' + opts.magic.toString(16) + ')'))
         }
 
         if (!messages[message.command]) {
@@ -60,8 +60,8 @@ exports.createDecodeStream = function (opts) {
       var checksum = getChecksum(payload)
       if (!bufferEquals(checksum, message.checksum)) {
         return cb(new Error('Invalid message checksum. ' +
-          'In header: "' + message.checksum.toString('hex') + '", ' +
-          'calculated: "' + checksum.toString('hex') + '"'))
+            'In header: "' + message.checksum.toString('hex') + '", ' +
+            'calculated: "' + checksum.toString('hex') + '"'))
       }
 
       var command = messages[message.command]
@@ -76,7 +76,7 @@ exports.createDecodeStream = function (opts) {
       }
       if (command.decode.bytes !== message.length) {
         return cb(new Error('Message length did not match header. ' +
-          'In header: ' + message.length + ', read: ' + command.decode.bytes))
+            'In header: ' + message.length + ', read: ' + command.decode.bytes))
       }
 
       bl.consume(message.length)
