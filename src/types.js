@@ -129,7 +129,7 @@ exports.header = struct([
   { name: 'version', type: struct.Int32LE },
   { name: 'prevHash', type: exports.buffer32 },
   { name: 'merkleRoot', type: exports.buffer32 },
-  { name: 'timestamp', type: struct.UInt32LE },
+  { name: 'time', type: struct.UInt32LE },
   { name: 'bits', type: struct.UInt32LE },
   { name: 'nonce', type: struct.UInt32LE }
 ])
