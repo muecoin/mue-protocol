@@ -1,9 +1,9 @@
 {
-  "name": "bitcoin-protocol",
+  "name": "dash-protocol",
   "version": "3.0.1",
-  "description": "Bitcoin network protocol streams",
+  "description": "Dash network protocol streams",
   "keywords": [
-    "bitcoin",
+    "dash",
     "networking",
     "p2p",
     "network",
@@ -11,9 +11,9 @@
     "decode",
     "webcoin"
   ],
-  "homepage": "https://github.com/mappum/bitcoin-protocol#readme",
+  "homepage": "https://github.com/snogcel/dash-protocol#readme",
   "bugs": {
-    "url": "https://github.com/mappum/bitcoin-protocol/issues"
+    "url": "https://github.com/snogcel/dash-protocol/issues"
   },
   "author": "Matt Bell <mappum@gmail.com>",
   "license": "MIT",
@@ -24,7 +24,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mappum/bitcoin-protocol.git"
+    "url": "https://github.com/snogcel/dash-protocol.git"
   },
   "scripts": {
     "test": "standard && nyc tape test/*.js | faucet && nyc report",
