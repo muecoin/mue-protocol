@@ -1,20 +1,20 @@
-# bitcoin-protocol
+# dash-protocol
 
-[![npm version](https://img.shields.io/npm/v/bitcoin-protocol.svg)](https://www.npmjs.com/package/bitcoin-protocol)
-[![Build Status](https://travis-ci.org/mappum/bitcoin-protocol.svg?branch=master)](https://travis-ci.org/mappum/bitcoin-protocol)
-[![Dependency Status](https://david-dm.org/mappum/bitcoin-protocol.svg)](https://david-dm.org/mappum/bitcoin-protocol)
+[![npm version](https://img.shields.io/npm/v/dash-protocol.svg)](https://www.npmjs.com/package/dash-protocol)
+[![Build Status](https://travis-ci.org/dashpay/dash-protocol.svg?branch=master)](https://travis-ci.org/dashpay/dash-protocol)
+[![Dependency Status](https://david-dm.org/dashpay/dash-protocol.svg)](https://david-dm.org/dashpay/dash-protocol)
 
-**Bitcoin network protocol streams**
+**Dash network protocol streams**
 
 This module encodes and decodes low-level network protocol data using streams.
 
 ## Usage
 
-`npm install bitcoin-protocol`
+`npm install dash-protocol`
 
 ```js
 var net = require('net')
-var bp = require('bitcoin-protocol')
+var bp = require('dash-protocol')
 
 var decoder = bp.createDecodeStream()
 decoder.on('data', function (message) { console.log(message) })
