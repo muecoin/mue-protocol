@@ -1,5 +1,5 @@
 {
-  "name": "dash-protocol",
+  "name": "@dashevo/dash-protocol",
   "version": "3.0.1",
   "description": "Dash network protocol streams",
   "keywords": [
@@ -9,11 +9,12 @@
     "network",
     "encode",
     "decode",
-    "webcoin"
+    "webcoin",
+    "dashevo"
   ],
-  "homepage": "https://github.com/snogcel/dash-protocol#readme",
+  "homepage": "https://github.com/dashevo/dash-protocol#readme",
   "bugs": {
-    "url": "https://github.com/snogcel/dash-protocol/issues"
+    "url": "https://github.com/dashevo/dash-protocol/issues"
   },
   "author": "Matt Bell <mappum@gmail.com>",
   "license": "MIT",
@@ -24,7 +25,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/snogcel/dash-protocol.git"
+    "url": "https://github.com/dashevo/dash-protocol.git"
   },
   "scripts": {
     "test": "standard && nyc tape test/*.js | faucet && nyc report",

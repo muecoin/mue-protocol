@@ -10,20 +10,20 @@ This module encodes and decodes low-level network protocol data using streams.
 
 ## Usage
 
-`npm install dash-protocol`
+`npm install @dashevo/dash-protocol`
 
 ```js
-var net = require('net')
-var bp = require('dash-protocol')
+const net = require('net');
+const bp = require('@dashevo/dash-protocol');
 
-var decoder = bp.createDecodeStream()
-decoder.on('data', function (message) { console.log(message) })
+const decoder = bp.createDecodeStream();
+decoder.on('data', message => console.log);
 
-var encoder = bp.createEncodeStream()
+const encoder = bp.createEncodeStream();
 
-var socket = net.connect(8333, '127.0.0.1')
-socket.pipe(decoder)
-encoder.pipe(socket)
+const socket = net.connect(8333, '127.0.0.1');
+socket.pipe(decoder);
+encoder.pipe(socket);
 
 encoder.write({
   magic: 0xd9b4bef9,
