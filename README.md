@@ -1,20 +1,20 @@
-# dash-protocol
+# mue-protocol
 
-[![npm version](https://img.shields.io/npm/v/dash-protocol.svg)](https://www.npmjs.com/package/dash-protocol)
-[![Build Status](https://travis-ci.org/dashpay/dash-protocol.svg?branch=master)](https://travis-ci.org/dashpay/dash-protocol)
-[![Dependency Status](https://david-dm.org/dashpay/dash-protocol.svg)](https://david-dm.org/dashpay/dash-protocol)
+[![npm version](https://img.shields.io/npm/v/mue-protocol.svg)](https://www.npmjs.com/package/mue-protocol)
+[![Build Status](https://travis-ci.org/muecoin/mue-protocol.svg?branch=master)](https://travis-ci.org/muecoin/mue-protocol)
+[![Dependency Status](https://david-dm.org/muecoin/mue-protocol.svg)](https://david-dm.org/muecoin/mue-protocol)
 
-**Dash network protocol streams**
+**MonetaryUnit network protocol streams**
 
 This module encodes and decodes low-level network protocol data using streams.
 
 ## Usage
 
-`npm install @dashevo/dash-protocol`
+`npm install muecoin/mue-protocol`
 
 ```js
 const net = require('net');
-const bp = require('@dashevo/dash-protocol');
+const bp = require('mue-protocol');
 
 const decoder = bp.createDecodeStream();
 decoder.on('data', message => console.log);
